@@ -1,13 +1,13 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "sifflet",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Sifflet data observability: official MCP server wiring and Monitors as Code (Quality as Code) skills, rules, and commands.",
   "author": {
     "name": "Sifflet"
   },
   "homepage": "https://docs.siffletdata.com/docs/sifflet-mcp-server",
-  "repository": "https://github.com/alexandreiorga-collab/sifflet-cursor-plugin",
+  "repository": "https://github.com/alexandreiorga-collab/sifflet-cursor-plugin-v2",
   "keywords": [
     "sifflet",
     "data-quality",
