@@ -28,7 +28,7 @@ This plugin is **not published on the Cursor Marketplace**, so it cannot be foun
 **Option A — local plugin folder (individual install):**
 
 ```bash
-git clone https://github.com/alexandreiorga-collab/sifflet-cursor-plugin.git ~/.cursor/plugins/local/sifflet
+git clone https://github.com/alexandreiorga-collab/sifflet-cursor-plugin-v2.git ~/.cursor/plugins/local/sifflet
 ```
 
 Restart Cursor (or run **Developer: Reload Window**), then open **Customize** and confirm the plugin's rules, skills, commands, and the `sifflet` MCP server appear. To update later, `git pull` in that folder and reload. On Teams/Enterprise plans this requires **Allow Local Plugin Imports** (Dashboard → Settings → Security & Identity → Marketplace and Plugins; off by default on Enterprise).
@@ -42,14 +42,14 @@ An admin opens **Dashboard → Plugins → Add Marketplace → Import from Repo*
 Add this repository as a plugin marketplace, then install the plugin:
 
 ```text
-/plugin marketplace add alexandreiorga-collab/sifflet-cursor-plugin
+/plugin marketplace add alexandreiorga-collab/sifflet-cursor-plugin-v2
 /plugin install sifflet@sifflet-local
 ```
 
 Or from the command line:
 
 ```bash
-claude plugin marketplace add alexandreiorga-collab/sifflet-cursor-plugin
+claude plugin marketplace add alexandreiorga-collab/sifflet-cursor-plugin-v2
 claude plugin install sifflet@sifflet-local
 ```
 
