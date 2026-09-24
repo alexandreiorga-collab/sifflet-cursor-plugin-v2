@@ -118,6 +118,7 @@ The plugin registers the `sifflet` MCP server through `mcp.json` (Cursor) and `.
 
 - `sifflet-mcp` - explore catalog assets, monitors, incidents, and lineage before changing data or YAML.
 - `sifflet-quality-as-code` - draft and refine Sifflet monitor and workspace YAML using MCP context and the Monitors as Code schema.
+- `sifflet-api` - call the Sifflet public REST API (users, teams, domains, credentials, calendars, notification rules, sources, and more) for operations the CLI/MCP don't expose, through a helper script that gates every mutating call behind a typed confirmation token.
 
 ### Rules
 
@@ -128,6 +129,16 @@ The plugin registers the `sifflet` MCP server through `mcp.json` (Cursor) and `.
 - `configure-sifflet-auth` - help configure Sifflet authentication.
 - `mac-plan-workspace` - run and review a dry-run plan.
 - `mac-apply-workspace` - apply a reviewed workspace change.
+
+### Sifflet API reference
+
+[`docs/api/`](docs/api/README.md) documents the Sifflet public REST API
+(`/api/v1`, `/api/v2`): auth, base URLs, error format, and every endpoint
+(assets, sources, users, teams, domains, credentials, calendars,
+notification rules, monitoring rules) with parameters, response shape, a
+`curl` example, and possible errors. The `sifflet-api` skill calls into it
+for operations the CLI/MCP don't cover; regenerate the docs with
+`python3 scripts/generate_api_docs.py` after refreshing `docs/api/openapi.json`.
 
 ### Safety guardrail
 
