@@ -48,7 +48,7 @@ Run on a machine (or container) without a previous install.
 
 **Claude Code**
 
-1. `/plugin marketplace add alexandreiorga-collab/sifflet-cursor-plugin`
+1. `/plugin marketplace add alexandreiorga-collab/sifflet-cursor-plugin-v2`
 2. `/plugin install sifflet@sifflet-local`
 3. `/plugin list` shows `sifflet`; `/hooks` shows the PreToolUse guard for `Bash` and `mcp__sifflet.*`.
 4. Both skills and all three commands appear.
